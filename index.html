@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Belanosima&family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
@@ -21,6 +21,7 @@
           extend: {
             fontFamily: {
               sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+              fancy2: ["Belanosima", "sans-serif"],
             },
             colors: {
               naarm: {
@@ -59,7 +60,7 @@
         <div class="flex h-16 items-center justify-between">
           <a href="#" class="flex items-center gap-2">
             <img src="./assets/logo.svg" alt="Music Naarm" class="h-7 w-7" />
-            <span class="font-semibold tracking-tight">Music Naarm</span>
+            <span class="font-black tracking-tight uppercase font-fancy2">Music Naarm</span>
           </a>
           <div class="hidden items-center gap-6 md:flex">
             <a
@@ -135,7 +136,8 @@
     <!-- HERO -->
     <header class="pt-28">
       <div class="mx-auto max-w-6xl px-4">
-        <div class="grid items-center gap-10 md:grid-cols-2">
+        <h1 class="font-black text-center text-white uppercase text-8xl font-fancy2">Music Naarm</h1>
+        <div class="mt-10 grid items-center gap-10 md:grid-cols-2">
           <div>
               <h1 class="text-4xl font-extrabold tracking-tight md:text-5xl">
                 A weather forecast for
