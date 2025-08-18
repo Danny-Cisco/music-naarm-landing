@@ -36,6 +36,18 @@
                 800: "#3730a3",
                 900: "#312e81",
               },
+              naarmpink: {
+                500: "#d61f81",
+              },
+              naarmorange: {
+                500: "#dd4827",
+              },
+              naarmblue: {
+                500: "#0fa9be",
+              },
+              naarmlime: {
+                500: "#b2b618",
+              },
             },
           },
         },
@@ -44,21 +56,20 @@
     <style type="text/tailwindcss">
       @layer components {
         .btn-primary {
-          @apply rounded-lg bg-naarm-600 px-6 py-3 font-semibold text-white shadow transition hover:bg-naarm-700 focus:outline-none focus:ring-2 focus:ring-naarm-500 focus:ring-offset-2;
+          @apply rounded-lg bg-naarmpink-500 px-6 py-3 font-black text-white shadow transition hover:bg-naarm-700 focus:outline-none focus:ring-2 focus:ring-naarm-500 focus:ring-offset-2;
         }
       }
     </style>
   </head>
   <body class="bg-[#121212] text-[#eedecd] antialiased font-sans">
     <!-- NAVBAR -->
-    <nav
-      class="fixed inset-x-0 top-0 z-50 border-b border-gray-800 bg-gray-900/80 backdrop-blur shadow-sm"
-    >
+    <nav class="fixed inset-x-0 top-0 z-50 bg-gray-800 backdrop-blur shadow-sm">
       <div class="mx-auto max-w-6xl px-4">
         <div class="flex h-16 items-center justify-between">
           <a href="#" class="flex items-center gap-2">
             <!-- <img src="./assets/logo.svg" alt="Music Naarm" class="h-7 w-7" /> -->
-            <span class="font-black tracking-tight uppercase font-fancy2"
+            <span
+              class="font-black tracking-tight text-xl uppercase font-fancy2"
               >Music Naarm</span
             >
           </a>
@@ -134,18 +145,19 @@
     </nav>
 
     <!-- HERO -->
-    <header class="pt-28">
+    <header class="pt-12">
       <div class="mx-auto max-w-6xl px-4">
-        <h1 class="font-black text-center uppercase text-9xl font-fancy2">
-          Music Naarm
-        </h1>
         <div class="w-full">
           <img
-            src="/images/musicnaarm-color-strip.png"
+            src="/images/musicnaarm-electricity.png"
             alt=""
-            class="mx-auto"
+            class="mx-auto object-cover w-full"
           />
         </div>
+        <h1 class="font-black z-1 text-center uppercase text-9xl font-fancy2">
+          Music Naarm
+        </h1>
+
         <div id="join" class="mt-10 grid items-center gap-10 md:grid-cols-2">
           <div>
             <h1 class="text-8xl font-extrabold w-12 tracking-tight md:text-8xl">
@@ -153,8 +165,10 @@
             </h1>
             <p class="mt-4 text-lg text-gray-400">
               We are building Naarm's first AI‑driven, automated gig guide.
-              Dashboards for booking agents; voice‑powered gig discovery for
-              fans.
+            </p>
+            <p class="mt-4 text-lg text-gray-400">
+              Sign up to out mailing list to receive early access to our gig
+              discovery interface.
             </p>
             <ul class="mt-6 list-disc space-y-2 pl-5 text-gray-300">
               <li>Interactive dashboards • maps • D3 genre plots</li>
