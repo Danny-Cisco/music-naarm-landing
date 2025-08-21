@@ -93,17 +93,19 @@
               <!-- Replace action with your Buttondown/Mailerlite form endpoint -->
               <form
                 class="flex max-w-lg flex-col gap-3 sm:flex-row"
-                action="https://buttondown.email/api/emails/embed-subscribe/musicnaarm"
+                action="https://41faa0ad.sibforms.com/serve/MUIFAP4FiMdI3alogglxqT-xRbcDj4-rvAthQTz935CueMh9IU1jCg4i0l_RcYghfwnmMr-cEQcMnd75XdfAgMWiBKL9dRawbkthY_xOLve1D3d5tdxisiZFlo6x4B5gWQXg7hhRDdtjtbs32HSrCBWNFH8JJ9s8xH0WQTB_RAHH2DTAl5ParbC6ZqhQ5tn-uTvqC09DB3o-4b8A"
                 method="post"
                 target="_blank"
               >
-                <label for="email" class="sr-only">Email</label>
+                <label for="EMAIL" class="sr-only">Email</label>
                 <input
-                  id="email"
-                  name="email"
+                  type="text"
+                  id="EMAIL"
+                  name="EMAIL"
+                  autocomplete="off"
+                  placeholder="EMAIL"
+                  data-required="true"
                   required
-                  type="email"
-                  placeholder="Enter your email"
                   class="w-full rounded-lg border border-gray-700 bg-gray-800 px-4 py-3 text-gray-100 placeholder-gray-400 focus:border-naarm-500 focus:ring-naarm-500"
                 />
                 <button class="btn-primary" type="submit">
